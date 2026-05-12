@@ -42,7 +42,7 @@ show-section-nav: true # true ==  essay pages show a fixed floating sidebar (on 
 #          gregynog, ashendene, custom
 # ────────────────────────────────────────────────────────────────────────
 
-color-theme: default
+color-theme: lyre
 
 #### BUILT-IN THEMES (printing-history references)
 # idaho       — USDA, 1958 Douglas-fir cloth, gold stamp · dark green navbar · Spectral
