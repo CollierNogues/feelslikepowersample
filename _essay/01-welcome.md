@@ -4,7 +4,7 @@ order: 1
 part: Overview and Examples
 ---
 
-We've been encouraging users of CollectionBuilder to write *with* their collections since we first started promoting the framework in 2019, mostly through contextual pages like the About page.
+I don't want to erase your carefully composed welcome text, Dev.
 
 More recently, we worked with several [Center for Digital Inquiry and Learning (CDIL)](https://cdil.lib.uidaho.edu/) Graduate Student Fellows who wanted to flip the setup around — featuring their essays on top, with CollectionBuilder living underneath.{% include essay/feature/aside.html text="See [Sedimentation](https://cdil.lib.uidaho.edu/sedimentation/), [Tender Spaces](https://cdil.lib.uidaho.edu/tender-spaces/), and [Fire Lines](https://cdil.lib.uidaho.edu/fire-lines/)." %} The results were strong enough that we wanted to open up the framework we built from those projects to more users.
 

@@ -9,7 +9,7 @@ part: Overview and Examples
 
 ## Digital Humanites Projects
 
-CB-Essay powers a variety of digital humanities projects:
+CB-Essay powers a variety of digital humanities projects, including MINE:
 
 
 ### Fire Lines: The First CB-Essay Project
