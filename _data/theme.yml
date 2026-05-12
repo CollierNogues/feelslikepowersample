@@ -26,7 +26,7 @@ featured-image-alt-text: "An illustration of writing brushes with Japanese label
 
 # NAVIGATION & HOMEPAGE LAYOUT
 
-show-contents-nav: false # true == navbar shows a "Contents" button that opens the essay chapter list
+show-contents-nav: true # true == navbar shows a "Contents" button that opens the essay chapter list
 show-homepage-toc: true # true == homepage displays a table of contents listing all essays
 show-section-nav: true # true ==  essay pages show a fixed floating sidebar (on wide screens)
 
