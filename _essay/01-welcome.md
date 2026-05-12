@@ -1,16 +1,18 @@
 ---
-title: Welcome to CB-Essay
+title: Feels Like Power: Immersive VR Poetry
 order: 1
 part: Overview and Examples
 ---
 
-I don't want to erase your carefully composed welcome text, Dev.
+Feels Like Power is a collection of immersive VR poems about the long afterlives of the Pacific War.
 
-More recently, we worked with several [Center for Digital Inquiry and Learning (CDIL)](https://cdil.lib.uidaho.edu/) Graduate Student Fellows who wanted to flip the setup around — featuring their essays on top, with CollectionBuilder living underneath.{% include essay/feature/aside.html text="See [Sedimentation](https://cdil.lib.uidaho.edu/sedimentation/), [Tender Spaces](https://cdil.lib.uidaho.edu/tender-spaces/), and [Fire Lines](https://cdil.lib.uidaho.edu/fire-lines/)." %} The results were strong enough that we wanted to open up the framework we built from those projects to more users.
+The project’s poems are set primarily in and around U.S. military bases in Japan, Korea, Guam, Singapore, and the Philippines, but also include locations in the U.S. and in cyberspace.
 
-CB-Essay is a publishing framework that lets you ***write with, on, and for*** the web while keeping complete control over how your work appears online and in print.
+The poems are written inside panoramic spherical photographs. When you read the poems in 3D, the poems extend panoramically around, above, and below you. By moving your head and body, you can navigate the environment and the text within it. This website enables VR within each poem for those who have VR headsets, but also features 2D versions which are accessible simply with a phone, tablet, or laptop. 
 
-The mini-essays below will walk you through the system and get you started.
+The project invites you to experience poems spatially in each site, and to travel between sites to discover resonances and contrasts. What can we learn about war, about its overlap with domestic life, about history and humanity, from bringing these distinct places with their distinct histories into contact with each other?
+
+
 
 ## So What Is It?
 
