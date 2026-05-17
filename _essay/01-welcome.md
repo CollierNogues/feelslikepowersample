@@ -4,70 +4,33 @@ order: 1
 part: Overview and Examples
 ---
 
-Feels Like Power is a collection of immersive VR poems about the long afterlives of the Pacific War.
+Feels Like Power argues that practices of looking shape what it is possible to see. More particularly, the ways we look at war’s artifacts—its memorials, its museum exhibits, its altered, rebuilt landscapes—shape what we take war to be. By “we,” I mean everyone from military historians to museum visitors to children playing on battleship-shaped play structures in public parks. More narrowly, of course, I mean readers of this book, whom I hope will accept my invitation to look in some unusual ways. 
 
-The project’s poems are set primarily in and around U.S. military bases in Japan, Korea, Guam, Singapore, and the Philippines, but also include locations in the U.S. and in cyberspace.
+The war central to this book is the Pacific War, though the book reaches back to the Spanish-American and Russo-Japanese Wars and forward to the War on Terror and our present moment. The terrain includes places whose sovereignty was contested during the Pacific War by the imperialist powers of Japan and the United States: Guam, the Philippines, Okinawa, and South Korea. All of these places have in common long and complex histories of colonial power struggles before, during, and after the Pacific War, and all of them still have anti-base resistance movements where their lands are occupied by U.S. military installations. 
 
-The poems are written inside panoramic spherical photographs. When you read the poems in 3D, the poems extend panoramically around, above, and below you. By moving your head and body, you can navigate the environment and the text within it. This website enables VR within each poem for those who have VR headsets, but also features 2D versions which are accessible simply with a phone, tablet, or laptop. 
+I grew up on one of those installations, Kadena Air Base, in Okinawa, Japan. My own early practices of looking were narrow, shaped by living inside a fence that separated my suburban American life visually, materially, and legally from the lives that Okinawans led just meters away off-base. In my early twenties, my mother retired from teaching for the Department of Defense schools overseas and I was no longer able to enter the base gates. By then I had begun to look again, to wonder why we had ever passed through those gates in the first place: why were there nine (thirteen, now) American elementary and high schools on a Japanese island eight thousand miles from the continental U.S.? Why did Kadena Air Base, home to nuclear warheads and the 8th Air Force, seem to my newly-single mother like a good home for us, too? 
 
-The project invites you to experience poems spatially in each site, and to travel between sites to discover resonances and contrasts. What can we learn about war, about its overlap with domestic life, about history and humanity, from bringing these distinct places with their distinct histories into contact with each other?
+Answering those questions led me to the decade-plus of research that has now produced more than one book. The first was a book of interactive poems; this book is, too, but it is also a new experiment in joining language and visual media. This book’s experiment is both an attempt to bring you with me to many discrete places and an exploration of how looking together in those places produces, too easily, the feeling of knowing what we are looking at. Let me explain. 
 
-
-
-## So What Is It?
-
-***CB-Essay*** is a Jekyll-based framework that combines **long-form essay writing** with **digital collection features**. Built on [CollectionBuilder](https://collectionbuilder.github.io/), it enables you to create multimodal scholarly narratives, written in Markdown, that integrate primary sources, archival materials, and multimedia items directly into your texts.
-
-Traditional digital publishing tools treat essays and collections as separate entities. CB-Essay connects them, allowing you to:
-
-- **Reference collection items** using simple includes
-- Create **asides and margin notes** that link to primary sources {% include /essay/feature/aside.html text="Like this!" %}
-- **Publish your work for free** on GitHub
-- Generate **well-designed print and pdf outputs** using PagedJS.
-- **Choose from 8 accessible color themes** or create your own custom palette
-- Fashion the readers' experience through **scroll-based interactions and coordinated typography** {% include /essay/feature/aside.html text="Keep scrolling to see the next section magically appear!" %}
-
-{% include essay/new-section.html %}
-
-## How Does It Work?
-
-CB-Essay operates on a **dual-collection model**:
-
-1. **Essay Collection** - Your narrative content lives in the `_essay/` folder as Markdown files
-2. **Object Collection** - Primary sources and items defined in a CSV metadata file
-
-The dual collection model lets you write ***with*** your collection of sources, allowing you to integrate references, images, documents, recordings, and videos seamlessly into your writing and into the web. 
-
-Just follow the plan, as detailed in the below image.{% include essay/feature/aside.html text="Below image credits: The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Photography Collection, The New York Public Library. 'Group farm plan writing meeting. Weld County, Colorado' The New York Public Library Digital Collections. [https://digitalcollections.nypl.org/items/1b0a3fc0-1d42-0139-bac7-0242ac110003](https://digitalcollections.nypl.org/items/1b0a3fc0-1d42-0139-bac7-0242ac110003)" %}
-
-{% include feature/image.html objectid="/assets/img/writing-plan.jpg" caption="The tool is no more complicated than following this gentleman's instructions!" alt="Group working on a farm plan writing project with man pointing at a complex plan written on a large sheet of paper at the front"%}
+In essence, this book is a tour of sites where significant events happened and are still happening to make and maintain the complex, contested matrix of U.S. military power, both soft and hard, as it manifests in the Pacific region, in relation to many other matrices of geopolitical, economic, and local community powers. This book begins from the premise that wherever a person encounters a war memorial, or a base fence, or a museum reconstruction of a wartime living room, or a military building repurposed for civilian use, they encounter a story about power. These stories are connected, and those connections can be read, though they are often obscured by geographical and temporal distance, or by narrative framing, or by the sheer multitude of connective threads joining a single site or event to larger currents of local and national histories, over centuries of capital and cultural and population flows across oceans and borders, amid thousands of decisions made by as many diplomats and soldiers and civilians in as many places. 
 
 
+No one can read it all. But standing in front of a memorial monument, especially one on the same ground where something happened, can give one the feeling of being present not just to the cenotaph or plaque but to the happenings themselves, to the individual and infinite lived experiences of the human and more-than-human participants of those happenings, to a kind of awe at the substance that the memorial opens out to. This is the gravity and purpose of a memorial. A similiar feeling of presence comes from observing a museum display of objects owned or touched by people who died in or lived through remarkable events; this is why we keep and display them. 
 
+Artifacts and sites like this aren’t always marked. They may instead be reused or redeveloped, or abandoned to decompose and be taken over by other living things. Sometimes their former lives can be traced in archival maps or pieced together through talking to unofficial, self-appointed custodians; sometimes people work together to mark them officially years later. In all of these cases, for each of these focal points designed and installed by memorial committees and state institutions and community historians, proximity brings, for me, a thrumming sense of presence that fans out to touch other corpora, other assemblages of experience and history emanating from other memorials and artifacts and sites. The ways that they touch each other, refract, open out into each other’s histories, is always compelling. Visiting any single site sends me down multiple rabbit holes, learning how it is connected to others, learning what nodes it forms in what warp and weft, how different patterns show in different lights.
 
-## Who Should Use CB-Essay?
+One conclusion I have come to is that wars always “spill over,” as Viet Nguyen has put it, both temporally and geographically. They don’t end just because someone with a flag pinned to their collar says they do, or because several someones signed the same sheet of paper. Nor do war’s violences stay contained in one place. They travel, over distances and generations. For some people in particular, the conditions of a given war or wars continue to structure their lives far beyond textbook dates and geographic boundaries: former comfort women, families separated at militarized borders, children of deployed soldiers who left them behind. This is also true of people who lean into the structures war has offered them: retired US veterans making their homes near their former duty stations, for example. [something about tourism: Teiawa could go here. It is no coincidence that places where military bases exist are often tropical paradises; militourism. Bring in de-tours and critical militourism, or counter-tourism. Use that to situate the next paragraph as a foray into what critical militourism might look like. Say about Espiritu’s critical juxtaposition.]
 
-- **Digital humanists** creating annotated editions or critical apparatus
-- **Historians** presenting narrative alongside primary sources
-- **Educators** building interactive course readers
-- **Archivists** creating context around collections
-- **Writers** publishing long-form digital scholarship
-- **Students** looking to improve their knowledge of web and print design
+This book is born of two impulses. First, I would like to bring you with me to look. I accomplish this by way of taking 360˚ panoramic images of sites across these geographies, and then connecting them according to the echoes they sound for me, and writing about those echoes in the images themselves. The poems in this book exist as text inside photographic environments. Their text appears in front of or above or behind you, and you can navigate through them by clicking on a phone or laptop or tablet, or by looking directly at a line of text in a VR headset. The lines of text are a way of annotating these photographic environments according to a poetic, rather than strictly academic, logic.
 
+The second impulse is to acknowledge and critique a problem in this way of approaching a place, and an image of the place, and all the things and people important to that place. A panoramic image looks a lot like the real thing; that’s the point. But of course it is only, actually, a photograph documenting a moment that is already past the instant the shutter snaps. Nothing is alive in a photograph the way it is in the place the photograph documents. Further, a panoramic photo is an especially bald lie—it is a flat collection of pixels wrapped around the horizons of your vision to mimic three-dimensional space. In this way, the panoramic form reminds us that there are edges to our perception even if we don’t perceive them as edges. I have more to say about the history of panoramas, about technology and photography, about touristic modes of looking; the longer introductory essay of this book takes up those subjects. But for now it is important to mark the false promise of any of these images. I cannot take you with me anywhere, and certainly not anywhere beyond the limits of my own vision. 
 
-### Bonus: Project Gutenberg Extractor
+I hope that this book, though, can serve as a navigational aid, offering some surprising confluences and provocative juxtapositions as points of departure. I have gathered resources produced by many people with expertise and experience greater than mine, and perspectives more intimate, in hopes of offering you, reader, opportune means of entering these stories of power at many points and following their warps and wefts as far as you would like to go. 
 
-Want to publish a public domain book? Use our [**GitHub Action**](https://dcnb.github.io/frankenstein/action.mp4) to extract any of **60,000+ books** from Project Gutenberg directly into your `_essay/` folder - pre-formatted for the site. 
+The easiest way to begin is to enter the first scene of one of the book’s five panoramic poems. Each panorama contains one or more lines of poetic text, joining it sequentially to other panoramas, so that you proceed through a poem as you proceed through the series of images. Each individual panorama is also accompanied by an essay. The essays offer context exploring the image, the events that happened there, public and scholarly and literary responses to those events, connections to other places, other events. The book can be read in multiple ways: a reader can choose to navigate through each unfolding poem first, or can read all the essays before visiting the panoramic poems. It is also possible to exit a panoramic poem at any moment to read the accompanying essay, then re-enter the poem. 
 
+The interactive nature of this book allows you also to choose to navigate through its texts thematically, entering one of four streams of history: sovereign, environmental, economic, or, if you would like to get personal, my own lived history in and around these sites. Or you may navigate by geographical region, by clicking a glowing dot on the map. If you are curious about what might have happened in the last hundred-and-fifty years or so on this day, you can scroll through the calendar at the bottom of this page and enter by selecting today’s date. Perhaps it is early spring, green things just beginning to emerge, or perhaps it is very cold where you are, and you are curious to know what else has happened when the world felt like this outside, to other people, elsewhere. 
 
-## Next Steps
-
-Check out some examples sites, then get started. The remaining essays show off CB-Essay in the wild, and then walk you through setting up your first site and understanding the features.
-
-- **[See Examples](02-examples.html)** - See CB-Essay as used for DH projects and in demonstration 
-- **[Get Started](03-get-started.html)** - Set up your first essay in 10 minutes
-- **[Essay Features](04-essay-features.html)** - Learn and copy all available features
-- **[Collection Integration](05-collection-integration.html)** - Blend essays with collection items
 
 Or jump straight to the [documentation]({{ '/docs.html' | relative_url }}) for reference guides.
 
