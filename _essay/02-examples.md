@@ -1,5 +1,5 @@
 ---
-title: Introduction Again
+title: Introduction
 order: 20
 byline: Collier Nogues
 part: Overview and Examples
