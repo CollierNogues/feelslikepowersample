@@ -49,21 +49,21 @@ source-code: https://github.com/CollectionBuilder/collectionbuilder-csv
 # These fields control what appears on your homepage cover/title page
 #
 # title: Main title displayed prominently on the cover page (required)
-title: Feels Like Power (for now)
+title: Feels Like Power
 #
 # author: Appears as "by [Author Name]" beneath the title on cover page (optional)
 # - If provided, this displays instead of the tagline
 # - Leave blank to show tagline instead
 # - You can use HTML to add line breaks or additional attribution:
 #   author: "Author Name<br>Edited by Editor Name<br>Translated by Translator Name"
-author: Collier Nogues
+author: 
 #
 # tagline: A subtitle/tagline that appears beneath the title (optional)
 # - Only displays if "author" field is empty
 # - Use for descriptive subtitle or project tagline
 # - Can also use HTML for multi-line display:
 #   tagline: "A Digital Edition<br>Published 2024"
-tagline: that's what you think
+tagline: immersive VR poems about the long afterlives of the Pacific War
 #
 # METADATA FIELDS (for search engines and social media):
 #
@@ -99,10 +99,10 @@ metadata: demo-compoundobjects-metadata
 #   Enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
 #   To remove the branding, comment out these values, or delete them. 
 #
-organization-name: "Center for Digital Inquiry and Learning (CDIL)"
-organization-link: https://cdil.lib.uidaho.edu/
-organization-logo-banner: https://cdil.lib.uidaho.edu/storying-extinction/assets/img/cdil.png
-organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
+# organization-name: "Center for Digital Inquiry and Learning (CDIL)"
+# organization-link: https://cdil.lib.uidaho.edu/
+# organization-logo-banner: https://cdil.lib.uidaho.edu/storying-extinction/assets/img/cdil.png
+# organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
 
 ##########
 # ROBOTS EXCLUDE
