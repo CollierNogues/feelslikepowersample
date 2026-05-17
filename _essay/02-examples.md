@@ -1,69 +1,35 @@
 ---
-title: CB-Essay in the Wild
+title: Introduction Again
 order: 20
-byline: Various Authors
+byline: Collier Nogues
 part: Overview and Examples
 ---
 
 
 
-## Digital Humanites Projects
+Feels Like Power argues that practices of looking shape what it is possible to see. More particularly, the ways we look at war’s artifacts—its memorials, its museum exhibits, its altered, rebuilt landscapes—shape what we take war to be. By “we,” I mean everyone from military historians to museum visitors to children playing on battleship-shaped play structures in public parks. More narrowly, of course, I mean readers of this book, whom I hope will accept my invitation to look in some unusual ways. 
 
-CB-Essay powers a variety of digital humanities projects, including MINE:
+The war central to this book is the Pacific War, though the book reaches back to the Spanish-American and Russo-Japanese Wars and forward to the War on Terror and our present moment. The terrain includes places whose sovereignty was contested during the Pacific War by the imperialist powers of Japan and the United States: Guam, the Philippines, Okinawa, and South Korea. All of these places have in common long and complex histories of colonial power struggles before, during, and after the Pacific War, and all of them still have anti-base resistance movements where their lands are occupied by U.S. military installations. 
 
+I grew up on one of those installations, Kadena Air Base, in Okinawa, Japan. My own early practices of looking were narrow, shaped by living inside a fence that separated my suburban American life visually, materially, and legally from the lives that Okinawans led just meters away off-base. In my early twenties, my mother retired from teaching for the Department of Defense schools overseas and I was no longer able to enter the base gates. By then I had begun to look again, to wonder why we had ever passed through those gates in the first place: why were there nine (thirteen, now) American elementary and high schools on a Japanese island eight thousand miles from the continental U.S.? Why did Kadena Air Base, home to nuclear warheads and the 8th Air Force, seem to my newly-single mother like a good home for us, too? 
 
-### Fire Lines: The First CB-Essay Project
+Answering those questions led me to the decade-plus of research that has now produced more than one book. The first was a book of interactive poems; this book is, too, but it is also a new experiment in joining language and visual media. This book’s experiment is both an attempt to bring you with me to many discrete places and an exploration of how looking together in those places produces, too easily, the feeling of knowing what we are looking at. Let me explain. 
 
-{% include feature/image.html objectid="/assets/img/fire-lines.png" alt="Fire Lines homepage screenshot" link="https://cdil.lib.uidaho.edu/fire-lines/"%}
-
-The first CB-Essay, this essay uses archival items from the University of Idaho's Special Collections and Archives to interrogate the massive wildfire that occurred in 1910, known as the Big Burn. 
-
-**View:** [cdil.lib.uidaho.edu/fire-lines](https://cdil.lib.uidaho.edu/fire-lines/)
-
-### Tender Spaces: Multimodal, Multilingual 5-Part Essay
-
-{% include feature/image.html objectid="/assets/img/tender_spaces.png" alt="Tender Spaces screenshot" link="https://cdil.lib.uidaho.edu/tender-spaces/"%}
-
-This extensively customized multimodal and multilinqual essay explores artist Gaëtane Buttigieg's life, art, and forced institutionalization in the 1970s through personal narratives and video interviews. This project demonstrates CB-Essay's flexibility for highly designed, custom presentations.
-
-**View:** [cdil.lib.uidaho.edu/tender-spaces](https://cdil.lib.uidaho.edu/tender-spaces/)
-
-## Demonstration Sites
-
-We set these sites up as demonstrations of the various themes and effects of the platform. 
-
-### Frankenstein: Extracted Book from Project Gutenberg
-
-{% include feature/image.html objectid="/assets/img/frankenstein.png" alt="A still from the film Frankenstein (1910), showing Charles Stanton Ogle as the monster." link="https://dcnb.github.io/frankenstein/"%}
-
-A digital edition of Mary Shelley's classic novel demonstrating the **monograph theme**. Features chapter-by-chapter navigation, integrated scholarly apparatus, and historical context from Project Gutenberg.
-
-You can watch me build the Frankenstein site in the video below!
-
-{% include feature/video.html objectid="https://www.lib.uidaho.edu/collectionbuilder/cb-essay/frankenstein.mp4" caption="I go through a few simple steps to build out this site, after having made a copy of the repository" %}
-
-**View:** [dcnb.github.io/frankenstein](https://dcnb.github.io/frankenstein) 
-
-### The Wreck of the Deutschland: Single-page, sectioned poem with scroll interactions
-
-{% include feature/image.html objectid="/assets/img/wreck.png" alt="Wreck of the Deutschland poem edition preview" link="https://dcnb.github.io/wreck-of-the-deutschland"%}
-
-Gerard Manley Hopkins's poem presented in the **essay theme** with scrolling transitions and visual breaks. Shows how CB-Essay handles poetry and single-page essays with dramatic effect.
-
-**View:** [dcnb.github.io/wreck-of-the-deutschland](https://dcnb.github.io/wreck-of-the-deutschland) 
+In essence, this book is a tour of sites where significant events happened and are still happening to make and maintain the complex, contested matrix of U.S. military power, both soft and hard, as it manifests in the Pacific region, in relation to many other matrices of geopolitical, economic, and local community powers. This book begins from the premise that wherever a person encounters a war memorial, or a base fence, or a museum reconstruction of a wartime living room, or a military building repurposed for civilian use, they encounter a story about power. These stories are connected, and those connections can be read, though they are often obscured by geographical and temporal distance, or by narrative framing, or by the sheer multitude of connective threads joining a single site or event to larger currents of local and national histories, over centuries of capital and cultural and population flows across oceans and borders, amid thousands of decisions made by as many diplomats and soldiers and civilians in as many places. 
 
 
+No one can read it all. But standing in front of a memorial monument, especially one on the same ground where something happened, can give one the feeling of being present not just to the cenotaph or plaque but to the happenings themselves, to the individual and infinite lived experiences of the human and more-than-human participants of those happenings, to a kind of awe at the substance that the memorial opens out to. This is the gravity and purpose of a memorial. A similiar feeling of presence comes from observing a museum display of objects owned or touched by people who died in or lived through remarkable events; this is why we keep and display them. 
 
-## Next Steps
+Artifacts and sites like this aren’t always marked. They may instead be reused or redeveloped, or abandoned to decompose and be taken over by other living things. Sometimes their former lives can be traced in archival maps or pieced together through talking to unofficial, self-appointed custodians; sometimes people work together to mark them officially years later. In all of these cases, for each of these focal points designed and installed by memorial committees and state institutions and community historians, proximity brings, for me, a thrumming sense of presence that fans out to touch other corpora, other assemblages of experience and history emanating from other memorials and artifacts and sites. The ways that they touch each other, refract, open out into each other’s histories, is always compelling. Visiting any single site sends me down multiple rabbit holes, learning how it is connected to others, learning what nodes it forms in what warp and weft, how different patterns show in different lights.
 
-Ready to get started? The remaining essays walk you through everything:
+One conclusion I have come to is that wars always “spill over,” as Viet Nguyen has put it, both temporally and geographically. They don’t end just because someone with a flag pinned to their collar says they do, or because several someones signed the same sheet of paper. Nor do war’s violences stay contained in one place. They travel, over distances and generations. For some people in particular, the conditions of a given war or wars continue to structure their lives far beyond textbook dates and geographic boundaries: former comfort women, families separated at militarized borders, children of deployed soldiers who left them behind. This is also true of people who lean into the structures war has offered them: retired US veterans making their homes near their former duty stations, for example. [something about tourism: Teiawa could go here. It is no coincidence that places where military bases exist are often tropical paradises; militourism. Bring in de-tours and critical militourism, or counter-tourism. Use that to situate the next paragraph as a foray into what critical militourism might look like. Say about Espiritu’s critical juxtaposition.]
 
-- **[Get Started](03-get-started.html)** - Set up your first essay in 10 minutes
-- **[Essay Features](04-essay-features.html)** - Learn and copy all available features
-- **[Collection Integration](05-collection-integration.html)** - Blend essays with collection items
+This book is born of two impulses. First, I would like to bring you with me to look. I accomplish this by way of taking 360˚ panoramic images of sites across these geographies, and then connecting them according to the echoes they sound for me, and writing about those echoes in the images themselves. The poems in this book exist as text inside photographic environments. Their text appears in front of or above or behind you, and you can navigate through them by clicking on a phone or laptop or tablet, or by looking directly at a line of text in a VR headset. The lines of text are a way of annotating these photographic environments according to a poetic, rather than strictly academic, logic.
 
-Or jump straight to the [documentation]({{ '/docs.html' | relative_url }}) for reference guides.
+The second impulse is to acknowledge and critique a problem in this way of approaching a place, and an image of the place, and all the things and people important to that place. A panoramic image looks a lot like the real thing; that’s the point. But of course it is only, actually, a photograph documenting a moment that is already past the instant the shutter snaps. Nothing is alive in a photograph the way it is in the place the photograph documents. Further, a panoramic photo is an especially bald lie—it is a flat collection of pixels wrapped around the horizons of your vision to mimic three-dimensional space. In this way, the panoramic form reminds us that there are edges to our perception even if we don’t perceive them as edges. I have more to say about the history of panoramas, about technology and photography, about touristic modes of looking; the longer introductory essay of this book takes up those subjects. But for now it is important to mark the false promise of any of these images. I cannot take you with me anywhere, and certainly not anywhere beyond the limits of my own vision. 
 
----
+I hope that this book, though, can serve as a navigational aid, offering some surprising confluences and provocative juxtapositions as points of departure. I have gathered resources produced by many people with expertise and experience greater than mine, and perspectives more intimate, in hopes of offering you, reader, opportune means of entering these stories of power at many points and following their warps and wefts as far as you would like to go. 
 
+The easiest way to begin is to enter the first scene of one of the book’s five panoramic poems. Each panorama contains one or more lines of poetic text, joining it sequentially to other panoramas, so that you proceed through a poem as you proceed through the series of images. Each individual panorama is also accompanied by an essay. The essays offer context exploring the image, the events that happened there, public and scholarly and literary responses to those events, connections to other places, other events. The book can be read in multiple ways: a reader can choose to navigate through each unfolding poem first, or can read all the essays before visiting the panoramic poems. It is also possible to exit a panoramic poem at any moment to read the accompanying essay, then re-enter the poem. 
 
+The interactive nature of this book allows you also to choose to navigate through its texts thematically, entering one of four streams of history: sovereign, environmental, economic, or, if you would like to get personal, my own lived history in and around these sites. Or you may navigate by geographical region, by clicking a glowing dot on the map. If you are curious about what might have happened in the last hundred-and-fifty years or so on this day, you can scroll through the calendar at the bottom of this page and enter by selecting today’s date. Perhaps it is early spring, green things just beginning to emerge, or perhaps it is very cold where you are, and you are curious to know what else has happened when the world felt like this outside, to other people, elsewhere. 
