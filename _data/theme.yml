@@ -18,7 +18,7 @@
 # - External URL: https://example.com/image.jpg
 # - Collection objectid: demo_001
 #
-image-style: full-image                # full-image, half-image, or no-image
+image-style: half-image                # full-image, half-image, or no-image
 featured-image: assets/img/001_roadside_tiny_planet.png
 featured-image-credit: "Observation Platform, Roadside Station Kadena, Okinawa, Japan, 2023. Collier Nogues."
 featured-image-alt-text: "Spherical tiny planet image of observation platform" # Add alt text for accessibility
@@ -42,7 +42,7 @@ show-section-nav: true # true ==  essay pages show a fixed floating sidebar (on 
 #          gregynog, ashendene, custom
 # ────────────────────────────────────────────────────────────────────────
 
-color-theme: gregynog
+color-theme: doves
 
 #### BUILT-IN THEMES (printing-history references)
 # idaho       — USDA, 1958 Douglas-fir cloth, gold stamp · dark green navbar · Spectral
