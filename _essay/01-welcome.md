@@ -1,7 +1,7 @@
 ---
 title: Feels Like Power: Immersive VR Poetry
 order: 1
-part: Overview and Examples
+part: Introduction
 ---
 
 Feels Like Power argues that practices of looking shape what it is possible to see. More particularly, the ways we look at war’s artifacts—its memorials, its museum exhibits, its altered, rebuilt landscapes—shape what we take war to be. By “we,” I mean everyone from military historians to museum visitors to children playing on battleship-shaped play structures in public parks. More narrowly, of course, I mean readers of this book, whom I hope will accept my invitation to look in some unusual ways. 
@@ -31,8 +31,6 @@ The easiest way to begin is to enter the first scene of one of the book’s five
 
 The interactive nature of this book allows you also to choose to navigate through its texts thematically, entering one of four streams of history: sovereign, environmental, economic, or, if you would like to get personal, my own lived history in and around these sites. Or you may navigate by geographical region, by clicking a glowing dot on the map. If you are curious about what might have happened in the last hundred-and-fifty years or so on this day, you can scroll through the calendar at the bottom of this page and enter by selecting today’s date. Perhaps it is early spring, green things just beginning to emerge, or perhaps it is very cold where you are, and you are curious to know what else has happened when the world felt like this outside, to other people, elsewhere. 
 
-
-Or jump straight to the [documentation]({{ '/docs.html' | relative_url }}) for reference guides.
 
 ---
 
