@@ -15,7 +15,7 @@ The war central to this book is the Pacific War, though the book reaches back to
 
 Playgrounds like this one{% include essay/feature/aside.html objectid="pano_001" text="Battleship playground, Sembawang Park, Singapore, 2023." %} in Singapore.
 
-Moscow's Administration Building{% include essay/feature/aside.html objectid="demo_001" text="Built in 1909, this building still stands on the University of Idaho campus." %} was one of the first permanent structures on campus.
+Moscow's Administration Building{% include essay/feature/aside.html objectid="pano_001" text="Built in 1909, this building still stands on the University of Idaho campus." %} was one of the first permanent structures on campus.
 
 
 I grew up on one of those installations, Kadena Air Base, in Okinawa, Japan. My own early practices of looking were narrow, shaped by living inside a fence that separated my suburban American life visually, materially, and legally from the lives that Okinawans led just meters away off-base. In my early twenties, my mother retired from teaching for the Department of Defense schools overseas and I was no longer able to enter the base gates. By then I had begun to look again, to wonder why we had ever passed through those gates in the first place: why were there nine (thirteen, now) American elementary and high schools on a Japanese island eight thousand miles from the continental U.S.? Why did Kadena Air Base, home to nuclear warheads and the 8th Air Force, seem to my newly-single mother like a good home for us, too? 
