@@ -13,9 +13,9 @@ Here's a simple margin note.{% include essay/feature/aside.html text="I don't ha
 The war central to this book is the Pacific War, though the book reaches back to the Spanish-American and Russo-Japanese Wars and forward to the War on Terror and our present moment. The terrain includes places whose sovereignty was contested during the Pacific War by the imperialist powers of Japan and the United States: Guam, the Philippines, Okinawa, and South Korea. All of these places have in common long and complex histories of colonial power struggles before, during, and after the Pacific War, and all of them still have anti-base resistance movements where their lands are occupied by U.S. military installations. 
 
 
-Playgrounds like this one{% include essay/feature/aside.html objectid="001_roadside_tiny_planet_thumbnail" text="Battleship playground, Sembawang Park, Singapore, 2023." %} in Singapore.
+Playgrounds like this one{% include essay/feature/aside.html objectid="pano_001" text="Battleship playground, Sembawang Park, Singapore, 2023." %} in Singapore.
 
-Moscow's Administration Building{% include essay/feature/aside.html objectid="pano_001" text="Built in 1909, this building still stands on the University of Idaho campus." %} was one of the first permanent structures on campus.
+Moscow's Administration Building{% include essay/feature/aside.html objectid="demo_001" text="Built in 1909, this building still stands on the University of Idaho campus." %} was one of the first permanent structures on campus.
 
 **Copy this:**
 ```liquid
