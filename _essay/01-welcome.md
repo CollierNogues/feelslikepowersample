@@ -1,6 +1,7 @@
 ---
-title: Feels Like Power: Immersive VR Poetry
-order: 1
+title: Introduction (welcome)
+order: 10
+byline: Collier Nogues
 part: Overview and Examples
 ---
 
