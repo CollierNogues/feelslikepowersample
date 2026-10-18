@@ -12,7 +12,7 @@ credits: true
 
 What pasts can be felt in these structures and landscapes? What futures are possible here? How can VR poetry help us ask and answer these questions? 
 
-But why does this still not work?
+But why does this still not work??
 
 {% include feature/alert.html color="info" text="Have a question? Check out our [docs](/docs.html)." %}
 
