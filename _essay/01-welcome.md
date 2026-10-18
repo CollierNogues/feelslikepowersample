@@ -5,7 +5,7 @@ byline: Collier Nogues
 part: Overview and Examples
 ---
 
-*Feels Like Power* try argues that practices of looking shape what it is possible to see. More particularly, the ways we look at war’s artifacts—its memorials, its museum exhibits, its altered, rebuilt landscapes—shape what we take war to be. By “we,” I mean everyone from military historians to museum visitors to children playing on battleship-shaped play structures in public parks. More narrowly, I mean you, reader. I hope you will accept my invitation to look in some unusual ways. 
+*Feels Like Power* argues that what we see depends on how we look at what's around us. More particularly, the ways we look at war’s artifacts—its memorials, its museum exhibits, its altered, rebuilt landscapes—shape what we take war to be. By “we,” I mean everyone from museum visitors to military historians to children playing on battleship-shaped play structures in public parks. I hope that you, reader, will accept my invitation to look in some unusual ways. 
 
 Here's a simple margin note.{% include essay/feature/aside.html text="I don't have much to say here but I hope I will, soon." %} The aside appears in the margin on desktop and inline on mobile.
 
