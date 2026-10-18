@@ -1,5 +1,5 @@
 ---
-title: Welcome 
+title: Lay Introduction 
 order: 10
 byline: Collier Nogues
 part: Overview and Examples

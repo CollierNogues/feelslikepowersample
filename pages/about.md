@@ -6,11 +6,12 @@ credits: true
 # Edit the markdown in this file to describe your project
 ---
 
-## About CB-Essay
+## About Feels Like Power
 
-**CB-Essay** combines long-form essay writing with digital collection features, enabling you to create multimodal scholarly narratives that seamlessly integrate primary sources, archival materials, and multimedia items directly into your writing.
+**Feels Like Power** is a manuscript-in-progress of immersive VR poems about the long afterlives of the Pacific War. The project’s poems are set primarily in and around U.S. military bases in Japan, Korea, Guam, Singapore, and the Philippines, but also include locations in the U.S. and in cyberspace.
 
-Built on [CollectionBuilder](https://collectionbuilder.github.io/), CB-Essay extends the CollectionBuilder-CSV framework to support essay and monograph publishing alongside traditional digital collection capabilities. 
+What pasts can be felt in these structures and landscapes? What futures are possible here? How can VR poetry help us ask and answer these questions? 
+
 
 {% include feature/alert.html color="info" text="Have a question? Check out our [docs](/docs.html)." %}
 
