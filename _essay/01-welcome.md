@@ -1,11 +1,11 @@
 ---
-title: Lay Introduction 
+title: Welcome 
 order: 10
 byline: Collier Nogues
-part: Overview and Examples
+part: [placeholder]
 ---
 
-*Feels Like Power* argues that what we see depends on how we look at what's around us. More particularly, the ways we look at war’s artifacts—its memorials, its museum exhibits, its altered, rebuilt landscapes—shape what we take war to be. By “we,” I mean everyone from museum visitors to military historians to children playing on battleship-shaped play structures in public parks. I hope that you, reader, will accept my invitation to look in some unusual ways. 
+*Feels Like Power* argues that our practices of looking shape what it is possible for us to see. More particularly, the ways we look at war’s artifacts shape what we take war to be. By "artifacts," I mean war memorials, museum exhibits, domestic spaces, and altered, rebuilt landscapes. By “we,” I mean everyone from museum visitors to military historians to children playing on battleship-themed playgrounds like this one{% include essay/feature/aside.html objectid="still_001" caption="Battleship playground, Sembawang Park, Singapore, 2023." %} in Singapore. I hope that you, reader, will accept my invitation to look in some unusual ways. 
 
 Here's a simple margin note.{% include essay/feature/aside.html text="I don't have much to say here but I hope I will, soon." %} The aside appears in the margin on desktop and inline on mobile.
 
