@@ -19,6 +19,12 @@ My own early practices of looking were narrow, shaped by living inside a fence t
    longitude="127.792033"
    map-zoom="15" 
    caption="2106 Cragge Drive, Stearley Heights (my house, 1991-94)" %}
+   some text inbetween for kicks
+{% include feature/mini-map.html
+   latitude="46.727485"
+   longitude="-117.014185"
+   map-zoom="18" 
+   caption="This is the library where I work!" %}
 
 Asking those questions led me to the decade-plus of research that has now produced more than one book. The first was a book of interactive poems. This book's poems are also interactive, but they are a new experiment in joining language and visual media. This book’s experiment is both an attempt to bring you with me to many discrete places and an exploration of how looking together in those places produces, too easily, the feeling of knowing what we are looking at. Let me explain. 
 
