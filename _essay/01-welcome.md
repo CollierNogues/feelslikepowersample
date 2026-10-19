@@ -15,6 +15,8 @@ I grew up on one of those installations, Kadena Air Base, in Okinawa, Japan.
    longitude="127.792033"
    map-zoom="18" 
    caption="This is the library where I work!" %}
+2106 Cragge Drive, Stearley Heights (my house, 1991-94)
+
 My own early practices of looking were narrow, shaped by living inside a fence that separated my suburban American life visually, materially, and legally from the lives that Okinawans led just meters away off-base. In my early twenties, my mother retired from teaching for the Department of Defense schools overseas and I was no longer able to enter the base gates. By then I had begun to look again, to wonder why we had ever passed through those gates in the first place. Why were there nine{% include essay/feature/aside.html text="Now there are thirteen." %} American elementary and high schools on a Japanese island eight thousand miles from the continental U.S.? Why did Kadena Air Base, home to nuclear warheads and the 8th Air Force, seem to my newly-single mother like a good home for us, too? 
 {% include feature/mini-map.html
    latitude="26.344972"
