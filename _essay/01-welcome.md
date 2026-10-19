@@ -9,11 +9,11 @@ part: [placeholder]
 
 The war central to this book is the Pacific War, though we will reach back to the Spanish-American and Russo-Japanese Wars and forward to the War on Terror and our present moment. The terrain includes places whose sovereignty was contested during the Pacific War by the imperialist powers of Japan and the United States: Guam, the Philippines, Okinawa, South Korea. All of these places have in common long and complex histories of colonial power struggles before, during, and after the Pacific War, and all of them still have anti-base resistance movements where their lands are occupied by U.S. military installations. 
 
-I grew up on one of those installations, Kadena Air Base, in Okinawa, Japan. 
+I grew up on one of those installations, Kadena Air Base, in Okinawa, Japan.{% include essay/feature/aside.html text="My house is the one in the center of the frame, on the outside corner of the bend in the road. Zoom out to see the flightline to the west and the much denser urban neighborhoods off-base to the east." %} My house is the one in the center of the frame, on the outside corner of the bend in the road.
 {% include feature/mini-map.html
    latitude="26.344972"
    longitude="127.792033"
-   map-zoom="17" 
+   map-zoom="18" 
    caption="This is the library where I work!" %}
 2106 Cragge Drive, Stearley Heights (my house, 1991-94)
 
