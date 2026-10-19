@@ -9,15 +9,15 @@ part: [placeholder]
 
 The war central to this book is the Pacific War, though the book reaches back to the Spanish-American and Russo-Japanese Wars and forward to the War on Terror and our present moment. The terrain includes places whose sovereignty was contested during the Pacific War by the imperialist powers of Japan and the United States: Guam, the Philippines, Okinawa, and South Korea. All of these places have in common long and complex histories of colonial power struggles before, during, and after the Pacific War, and all of them still have anti-base resistance movements where their lands are occupied by U.S. military installations. 
 
-Here's a simple margin note.{% include essay/feature/aside.html text="I don't have much to say here but I hope I will, soon." %} The aside appears in the margin on desktop and inline on mobile.
-
-I grew up on one of those installations, Kadena Air Base, in Okinawa, Japan{% include essay/feature/aside-map.html
+I grew up on one of those installations, Kadena Air Base, in Okinawa, Japan.{% include essay/feature/aside-map.html
    latitude="26.344972"
    longitude="127.792033"
-   location="Kadena Air Base, Okinawa, Japan (my house, 1991-94)"
-   map-zoom="12" %}. My own early practices of looking were narrow, shaped by living inside a fence that separated my suburban American life visually, materially, and legally from the lives that Okinawans led just meters away off-base. In my early twenties, my mother retired from teaching for the Department of Defense schools overseas and I was no longer able to enter the base gates. By then I had begun to look again, to wonder why we had ever passed through those gates in the first place: why were there nine (thirteen, now) American elementary and high schools on a Japanese island eight thousand miles from the continental U.S.? Why did Kadena Air Base, home to nuclear warheads and the 8th Air Force, seem to my newly-single mother like a good home for us, too? 
+   location="2106 Cragge Drive, Stearley Heights (my house, 1991-94)"
+   map-zoom="12" %}My own early practices of looking were narrow, shaped by living inside a fence that separated my suburban American life visually, materially, and legally from the lives that Okinawans led just meters away off-base. In my early twenties, my mother retired from teaching for the Department of Defense schools overseas and I was no longer able to enter the base gates. By then I had begun to look again, to wonder why we had ever passed through those gates in the first place: why were there nine (thirteen, now) American elementary and high schools on a Japanese island eight thousand miles from the continental U.S.? Why did Kadena Air Base, home to nuclear warheads and the 8th Air Force, seem to my newly-single mother like a good home for us, too? 
 
 Playgrounds like this one{% include essay/feature/aside.html objectid="pano_001" caption="Road Station Kadena, Okinawa, 2023." %} in Singapore.
+
+Here's a simple margin note.{% include essay/feature/aside.html text="I don't have much to say here but I hope I will, soon." %} The aside appears in the margin on desktop and inline on mobile.
 
 Answering those questions led me to the decade-plus of research that has now produced more than one book. The first was a book of interactive poems. This book is, too, but it is also a new experiment in joining language and visual media. This book’s experiment is both an attempt to bring you with me to many discrete places and an exploration of how looking together in those places produces, too easily, the feeling of knowing what we are looking at. Let me explain. 
 
