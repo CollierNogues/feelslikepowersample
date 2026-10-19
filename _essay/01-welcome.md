@@ -7,12 +7,14 @@ part: [placeholder]
 
 *Feels Like Power* argues that our practices of looking shape what it is possible for us to see. Particularly, the ways we look at artifacts of war shape what we take war to be, and how we understand our relationship to historical and ongoing wars. War leaves traces in public memorials, in museum exhibits, in domestic spaces, in altered and rebuilt landscapes. Some traces are easier for us to see than others. By “we,” I mean everyone from museum visitors to military historians to children playing on battleship-themed playgrounds{% include essay/feature/aside.html objectid="still_001" caption="like this one in Sembawang Park, Singapore, 2023." %}. I hope that you, reader, will accept my invitation to look in some unusual ways. 
 
-The war central to this book is the Pacific War, though we will reach back to the Spanish-American and Russo-Japanese Wars and forward to the War on Terror and our present moment. The terrain includes places whose sovereignty was contested during the Pacific War by the imperialist powers of Japan and the United States: Guam, the Philippines, Okinawa, South Korea. All of these places have in common long and complex histories of colonial power struggles before, during, and after the Pacific War, and all of them still have anti-base resistance movements where their lands are occupied by U.S. military installations. I grew up on one of those installations, Kadena Air Base, in Okinawa, Japan.{% include essay/feature/aside-map.html
+The war central to this book is the Pacific War, though we will reach back to the Spanish-American and Russo-Japanese Wars and forward to the War on Terror and our present moment. The terrain includes places whose sovereignty was contested during the Pacific War by the imperialist powers of Japan and the United States: Guam, the Philippines, Okinawa, South Korea. All of these places have in common long and complex histories of colonial power struggles before, during, and after the Pacific War, and all of them still have anti-base resistance movements where their lands are occupied by U.S. military installations. 
+
+I grew up on one of those installations, Kadena Air Base, in Okinawa, Japan. 
+{% include feature/mini-map.html
    latitude="26.344972"
    longitude="127.792033"
-   location="2106 Cragge Drive, Stearley Heights (my house, 1991-94)"
-   map-zoom="12" %}
-   
+   map-zoom="18" 
+   caption="This is the library where I work!" %}
 My own early practices of looking were narrow, shaped by living inside a fence that separated my suburban American life visually, materially, and legally from the lives that Okinawans led just meters away off-base. In my early twenties, my mother retired from teaching for the Department of Defense schools overseas and I was no longer able to enter the base gates. By then I had begun to look again, to wonder why we had ever passed through those gates in the first place. Why were there nine{% include essay/feature/aside.html text="Now there are thirteen." %} American elementary and high schools on a Japanese island eight thousand miles from the continental U.S.? Why did Kadena Air Base, home to nuclear warheads and the 8th Air Force, seem to my newly-single mother like a good home for us, too? 
 {% include feature/mini-map.html
    latitude="26.344972"
@@ -20,11 +22,7 @@ My own early practices of looking were narrow, shaped by living inside a fence t
    map-zoom="15" 
    caption="2106 Cragge Drive, Stearley Heights (my house, 1991-94)" %}
    some text inbetween for kicks
-{% include feature/mini-map.html
-   latitude="46.727485"
-   longitude="-117.014185"
-   map-zoom="18" 
-   caption="This is the library where I work!" %}
+
 
 Asking those questions led me to the decade-plus of research that has now produced more than one book. The first was a book of interactive poems. This book's poems are also interactive, but they are a new experiment in joining language and visual media. This book’s experiment is both an attempt to bring you with me to many discrete places and an exploration of how looking together in those places produces, too easily, the feeling of knowing what we are looking at. Let me explain. 
 
@@ -46,7 +44,12 @@ The easiest way to begin is to enter the first scene of one of the book’s five
 
 The interactive nature of this book allows you also to choose to navigate through its texts thematically, entering one of four streams of history: sovereign, environmental, economic, or, if you would like to get personal, my own lived history in and around these sites. Or you may navigate by geographical region, by clicking a glowing dot on the map. If you are curious about what might have happened in the last hundred-and-fifty years or so on this day, you can scroll through the calendar at the bottom of this page and enter the poems by selecting today’s date. Perhaps it is early spring, green things just beginning to emerge, or perhaps it is very cold where you are, and you are curious to know what else has happened when the world felt like this outside, to other people, elsewhere. 
 
-
+{% include essay/feature/aside-map.html
+   latitude="26.344972"
+   longitude="127.792033"
+   location="2106 Cragge Drive, Stearley Heights (my house, 1991-94)"
+   map-zoom="12" %}
+   
 ---
 Playgrounds like this one{% include essay/feature/aside.html objectid="pano_001" caption="Road Station Kadena, Okinawa, 2023." %} in Singapore.
 
