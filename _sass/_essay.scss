@@ -102,6 +102,8 @@ a {
 aside, .aside {
     display: inline;
     float: right;
+    /* the negative margin-right gives the float a zero-width margin box, so floats would otherwise overlap; clear stacks them */
+    clear: right;
     position: relative;
     width: 20vw;
     margin-right: -26vw;

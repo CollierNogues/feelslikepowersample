@@ -20,7 +20,8 @@
 <style>
 #{{ map_id }} { height: {{ include.height | default: '400px' }}; z-index: 98; }
 </style>
-<div id="{{ map_id }}"></div>
+{% assign print_lat = map-item.latitude | default: include.latitude %}{% assign print_lon = map-item.longitude | default: include.longitude %}
+<div id="{{ map_id }}" class="mb-3" data-print-map data-lat="{{ print_lat }}" data-lon="{{ print_lon }}" data-zoom="{{ include.map-zoom | default: 10 }}" data-height="{{ include.height | default: '400px' | remove: 'px' }}" data-basemap="{{ include.basemap | default: 'Esri_WorldImagery' }}"{% if include.objectid %} data-marker{% endif %}></div>
 {% if include.map-link == true %}
 <a href="{{ '/map.html' | relative_url }}?location={{ map-item.latitude | default: include.latitude }},{{ map-item.longitude | default: include.longitude }}{%if include.objectid %}&marker={{ include.objectid }}{% endif %}" class="btn btn-outline-primary my-3">View on Full Map</a>{% endif %}
 <!-- load leaflet dependencies -->
@@ -35,6 +36,11 @@
     var mapZoom = {{ include.map-zoom | default: 10 }};
     /* init map, set center and zoom */
     var map = L.map('{{ map_id }}').setView(mapCenter, mapZoom);
+
+    /* the container's size can still change after this script runs (fonts, aside layout), which leaves
+       edge tiles unloaded until the map is moved, so re-measure on load and whenever it resizes */
+    window.addEventListener('load', function() { if (document.body.contains(map.getContainer())) map.invalidateSize(); });
+    if (window.ResizeObserver) { new ResizeObserver(function() { map.invalidateSize(); }).observe(document.getElementById('{{ map_id }}')); }
 
     /* add map layer options */
     var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {

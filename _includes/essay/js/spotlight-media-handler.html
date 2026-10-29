@@ -168,6 +168,108 @@
         return iframe;
     }
 
+    // Load Pannellum on first use (only pages that open a panorama pay for it)
+    let pannellumPromise = null;
+
+    function loadPannellum() {
+        if (pannellumPromise) return pannellumPromise;
+        pannellumPromise = new Promise(function(resolve, reject) {
+            if (typeof pannellum !== 'undefined') { resolve(); return; }
+            const libPath = '{{ "/assets/lib/pannellum" | relative_url }}';
+            const css = document.createElement('link');
+            css.rel = 'stylesheet';
+            css.href = libPath + '/pannellum.css';
+            document.head.appendChild(css);
+            const script = document.createElement('script');
+            script.src = libPath + '/pannellum.js';
+            script.onload = resolve;
+            script.onerror = reject;
+            document.head.appendChild(script);
+        });
+        return pannellumPromise;
+    }
+
+    // Panoramas can't live inside Spotlight's slide: it captures mouse/touch drags on the slide
+    // area (for swiping) before Pannellum sees them. Instead the slide is a blank placeholder and
+    // the live viewer sits in an overlay layer inside #spotlight, above the slides but below
+    // Spotlight's header, footer and prev/next buttons, so those keep working.
+    let panoLayer = null;
+    let menuTimer = null;
+    const panoViewers = {};
+
+    function createPanoramaPlaceholder() {
+        return document.createElement('div');
+    }
+
+    // Pannellum loads the image via XHR, so it must be same-origin. metadata.json uses
+    // absolute_url, which fails when the page host differs (localhost vs 127.0.0.1), so keep only the path.
+    function toSameOriginPath(src) {
+        try { return new URL(src, window.location.href).pathname; } catch (e) { return src; }
+    }
+
+    function getPanoLayer() {
+        const spotlightEl = document.getElementById('spotlight');
+        if (!spotlightEl) return null;
+        if (panoLayer && panoLayer.parentNode === spotlightEl) return panoLayer;
+
+        panoLayer = document.createElement('div');
+        panoLayer.className = 'spl-pano-layer';
+        panoLayer.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;display:none;';
+        // Right after .spl-track so header, footer and prev/next stack above it
+        spotlightEl.insertBefore(panoLayer, spotlightEl.querySelector('.spl-track').nextSibling);
+
+        // Spotlight's own mousemove handler (which reveals the controls) doesn't see this layer
+        ['mousemove', 'touchstart'].forEach(function(type) {
+            panoLayer.addEventListener(type, showSpotlightMenu, { passive: true });
+        });
+        return panoLayer;
+    }
+
+    function showSpotlightMenu() {
+        const spotlightEl = document.getElementById('spotlight');
+        if (!spotlightEl) return;
+        spotlightEl.classList.add('menu');
+        clearTimeout(menuTimer);
+        menuTimer = setTimeout(function() { spotlightEl.classList.remove('menu'); }, 3000);
+    }
+
+    // Show the viewer for the current slide if it is a panorama, otherwise hide the layer
+    function syncPanoramaLayer(index) {
+        const current = galleryItems[index - 1];
+        // Galleries with no panorama on screen never touch Spotlight's DOM
+        if (!panoLayer && !(current && current.pano)) return;
+
+        const layer = getPanoLayer();
+        if (!layer) return;
+
+        layer.style.display = (current && current.pano) ? 'block' : 'none';
+        if (!current || !current.pano) return;
+
+        Object.keys(panoViewers).forEach(function(id) {
+            panoViewers[id].el.style.display = (id === current.objectid) ? 'block' : 'none';
+        });
+
+        loadPannellum().then(function() {
+            let entry = panoViewers[current.objectid];
+            if (!entry) {
+                const el = document.createElement('div');
+                el.style.width = '100%';
+                el.style.height = '100%';
+                layer.appendChild(el);
+                entry = panoViewers[current.objectid] = { el: el };
+                entry.viewer = pannellum.viewer(el, {
+                    type: 'equirectangular',
+                    panorama: current.pano,
+                    autoLoad: true
+                });
+            }
+            entry.el.style.display = 'block';
+            entry.viewer.resize();
+        }).catch(function(error) {
+            console.error('Error loading Pannellum:', error);
+        });
+    }
+
     // Determine media type and create appropriate viewer
     function createMediaViewer(item) {
         const location = item.object_location || '';
@@ -221,6 +323,16 @@
             return {
                 media: 'node',
                 src: createPDFViewer(location, item.title),
+                title: item.title
+            };
+        }
+
+        // Check for panorama (equirectangular image)
+        if (displayTemplate === 'panorama') {
+            return {
+                media: 'node',
+                src: createPanoramaPlaceholder(),
+                pano: toSameOriginPath(location),
                 title: item.title
             };
         }
@@ -322,11 +434,15 @@
                     itemPageButton = Spotlight.addControl('item-page', itemPageHandler);
                     itemPageButton.className += ' spl-item-page';
                     itemPageButton.title = 'View Item Page';
+
+                    syncPanoramaLayer(index);
                 },
                 onchange: function(index) {
                     console.log('Changed to index:', index);
                     // Update current URL when user navigates
                     currentItemUrl = galleryItems[index - 1].reference_url;
+
+                    syncPanoramaLayer(index);
 
                     // Update the button href
                     const footerButton = document.querySelector('.spl-button');
@@ -336,6 +452,7 @@
                 },
                 onclose: function() {
                     currentItemUrl = null;
+                    if (panoLayer) panoLayer.style.display = 'none';
                     if (itemPageButton) {
                         try {
                             Spotlight.removeControl('item-page');

@@ -513,7 +513,38 @@ body.print-margin-notes {
    INTERACTIVE ELEMENTS — graceful print degradation
    ============================================================ */
 
-[id^="mini-map"] { display: none !important; }
+/* Static map images (print.html swaps the Leaflet maps for these) */
+.print-map {
+  margin: 0.75rem 0;
+  break-inside: avoid;
+
+  .print-map-img { display: block; width: 100%; height: auto; }
+}
+span.aside .print-map { margin-bottom: 0; }
+/* Aside maps print as a standalone block after their paragraph (print.html moves them out), since
+   Paged.js splits maps that sit inside a paragraph or a float across pages. */
+.print-map-aside {
+  break-inside: avoid;
+  max-width: 3.75in;
+  margin: 0.75rem 0 0.75rem 1.25rem;
+  padding-left: 0.75rem;
+  border-left: 1pt solid rgba(0, 0, 0, 0.15);
+  font-size: 9pt;
+  line-height: 1.55;
+
+}
+/* body.print-margin-notes span.aside floats into the gutter; undo that for the note inside a map block */
+.print-map-aside span.aside,
+body.print-margin-notes .print-map-aside span.aside {
+  display: block;
+  float: none;
+  width: auto;
+  margin: 0 0 0.35rem;
+  padding: 0;
+  border: 0;
+}
+/* the modal-trigger pin button has no use on paper; the map itself is shown instead */
+span.aside .btn[data-bs-toggle="modal"] { display: none !important; }
 a[href*="/map.html"].btn { display: none !important; }
 
 .accordion-button { display: none !important; }

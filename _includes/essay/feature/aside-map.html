@@ -24,7 +24,7 @@
     - "title" = custom header text for the modal, defaults to location if provided (optional)
 
 {% endcomment %}
-{% capture map_id %}mini-map_{{ include.latitude | slugify }}{% endcapture %}
+{% capture map_id %}aside-map_{{ include.latitude | slugify }}{% endcapture %}
 {% capture map-pin %}<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
     <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
@@ -43,7 +43,7 @@
                 <style>
                 #{{ map_id }} { height: {{ include.height | default: '600px' }}; z-index: 98; }
                 </style>
-                <div id="{{ map_id }}" class="my-5"></div>
+                <div id="{{ map_id }}" class="my-5" data-print-map data-lat="{{ map-item.latitude | default: include.latitude }}" data-lon="{{ map-item.longitude | default: include.longitude }}" data-zoom="{{ include.map-zoom | default: 13 }}" data-height="{{ include.height | default: '600px' | remove: 'px' }}" data-basemap="{{ include.basemap | default: site.data.theme.map-base }}" data-marker></div>
                 {% if include.map-link == true %}
                 <a href="{{ '/map.html' | relative_url }}?location={{ map-item.latitude | default: include.latitude }},{{ map-item.longitude | default: include.longitude }}{%if include.objectid %}&marker={{ include.objectid }}{% endif %}" class="btn btn-outline-primary my-3">View on Full Map</a>{% endif %}
             </div>

@@ -199,9 +199,96 @@
         el.style.display = 'none';
       });
 
-      // 0c. Hide Leaflet mini-maps and iframes (JS-only, not printable).
-      document.querySelectorAll('[id^="mini-map"]').forEach(function(el) {
-        el.style.display = 'none';
+      // 0c. Leaflet maps are JS-only and don't survive Paged.js cloning, so swap each one for a
+      //     static Esri map image of the same center/zoom (data-* attributes come from the map includes).
+      //     Modal maps (aside-map) are moved into their .aside callout instead of the hidden modal.
+      var R = 6378137, TILE0 = 156543.03392804097, PRINT_MAP_W = 600;
+      var exportLayers = {
+        Esri_WorldImagery: 'World_Imagery',
+        Esri_WorldStreetMap: 'World_Street_Map'
+      };
+      var mapJobs = [];
+      function bakeMap(url, w, h, marker) {
+        return new Promise(function(resolve, reject) {
+          var src = new Image();
+          src.crossOrigin = 'anonymous';
+          src.onload = function() {
+            var credit = 28;
+            var canvas = document.createElement('canvas');
+            canvas.width = w;
+            canvas.height = h + credit;
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#fff';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(src, 0, 0, w, h);
+            if (marker) {
+              ctx.beginPath();
+              ctx.arc(w / 2, h / 2, 18, 0, Math.PI * 2);
+              ctx.fillStyle = 'teal';
+              ctx.fill();
+              ctx.lineWidth = 3;
+              ctx.strokeStyle = 'yellow';
+              ctx.stroke();
+            }
+            ctx.fillStyle = '#666';
+            ctx.font = '22px sans-serif';
+            ctx.fillText('Map tiles \u00A9 Esri', 0, h + 21);
+            try { resolve(canvas.toDataURL('image/jpeg', 0.9)); } catch (e) { reject(e); }
+          };
+          src.onerror = reject;
+          src.src = url;
+        });
+      }
+      window._printMapsReady = function() { return Promise.all(mapJobs); };
+      document.querySelectorAll('[data-print-map]').forEach(function(el) {
+        var lat = parseFloat(el.dataset.lat), lon = parseFloat(el.dataset.lon);
+        var zoom = parseInt(el.dataset.zoom, 10);
+        var h = parseInt(el.dataset.height, 10) || 400;
+        if (el.closest('.modal')) h = Math.min(h, 400);  // aside maps print small; the modal's 600px square is too tall
+        if (isNaN(lat) || isNaN(lon) || isNaN(zoom)) { el.remove(); return; }
+
+        // Web Mercator bbox covering the same ground as the on-screen map, rendered at 2x for print
+        var x = R * lon * Math.PI / 180;
+        var y = R * Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360));
+        var res = TILE0 / Math.pow(2, zoom);
+        var bbox = [x - res * PRINT_MAP_W / 2, y - res * h / 2, x + res * PRINT_MAP_W / 2, y + res * h / 2];
+        var layer = exportLayers[el.dataset.basemap] || 'World_Street_Map';
+
+        var fig = document.createElement('figure');
+        fig.className = 'print-map';
+        // Paged.js splits SVG/figure children across pages, so the map, marker and credit are drawn onto
+        // one canvas and used as a single <img>, which it treats as unbreakable. Esri sends CORS headers.
+        var url = 'https://server.arcgisonline.com/ArcGIS/rest/services/' + layer + '/MapServer/export' +
+          '?bbox=' + bbox.map(function(v) { return v.toFixed(2); }).join(',') +
+          '&bboxSR=3857&imageSR=3857&size=' + (PRINT_MAP_W * 2) + ',' + (h * 2) + '&format=jpg&f=image';
+        var img = document.createElement('img');
+        img.className = 'print-map-img';
+        img.alt = 'Map centered on ' + lat.toFixed(4) + ', ' + lon.toFixed(4) + '. Map tiles \u00A9 Esri.';
+        img.src = url;  // fallback if baking fails: plain map without marker or credit
+        fig.appendChild(img);
+        mapJobs.push(bakeMap(url, PRINT_MAP_W * 2, h * 2, el.hasAttribute('data-marker')).then(function(dataUrl) {
+          img.src = dataUrl;
+        }).catch(function() {}));
+
+        // aside-map markup is <span class="aside"> (possibly wrapped in a <p> by kramdown) followed by its modal
+        var modal = el.closest('.modal');
+        var prev = modal && modal.previousElementSibling;
+        var aside = prev && (prev.classList.contains('aside') ? prev : prev.querySelector('.aside'));
+        if (aside) {
+          // Pull the map out of its paragraph: Paged.js breaks a paragraph mid-flow and would split
+          // the map across pages. As a standalone block right after the paragraph it moves whole.
+          var block = document.createElement('div');
+          block.className = 'print-map-aside';
+          var note = aside.cloneNode(true);
+          note.querySelectorAll('.btn, .aside-num').forEach(function(n) { n.remove(); });
+          block.appendChild(note);
+          block.appendChild(fig);
+          (aside.closest('p') || aside).after(block);
+          aside.remove();
+          modal.remove();
+        } else {
+          el.replaceWith(fig);
+        }
       });
       document.querySelectorAll('iframe').forEach(function(el) {
         el.style.display = 'none';
@@ -360,7 +447,9 @@
       }
       shell.setAttribute('aria-hidden', 'true');
       shell.style.setProperty('display', 'none', 'important');
-      window.PagedPolyfill.preview(fragment);
+      // Wait for the baked map images (prep step 0c) so Paged.js measures their final size
+      var mapsReady = window._printMapsReady ? window._printMapsReady() : Promise.resolve();
+      mapsReady.then(function() { window.PagedPolyfill.preview(fragment); });
     })();
   </script>
 
