@@ -52,9 +52,3 @@ The interactive nature of this book allows you also to choose to navigate throug
    map-zoom="12" %}
    
 ---
-Playgrounds like this one{% include essay/feature/aside.html objectid="pano_001" caption="Road Station Kadena, Okinawa, 2023." %} in Singapore.
-
-
-
-
-Here's a simple margin note.{% include essay/feature/aside.html text="I don't have much to say here but I hope I will, soon." %} The aside appears in the margin on desktop and inline on mobile.
