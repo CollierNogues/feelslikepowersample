@@ -20,7 +20,7 @@
 #
 image-style: half-image                # full-image, half-image, or no-image
 featured-image: assets/img/001_roadside_tiny_planet.png
-featured-image-credit: "Observation Platform, Roadside Station Kadena, Okinawa, Japan, 2023. Collier Nogues."
+featured-image-credit: "Changing this for a Test Observation Platform, Roadside Station Kadena, Okinawa, Japan, 2023. Collier Nogues."
 featured-image-alt-text: "Spherical tiny planet image of observation platform" # Add alt text for accessibility
 
 
